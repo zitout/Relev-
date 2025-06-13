@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قارئ ومحلل ملفات PDF</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استدعاء مكتبة PDF.js من CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>محلل كشف الحساب (PDF)</h1>
+            <p>اختر ملف PDF من جهازك ليتم تحليله وتلوين الأسطر حسب القواعد المحددة.</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <label for="pdf-file-input" class="upload-label">الرجاء اختيار ملف PDF</label>
+                <input type="file" id="pdf-file-input" accept=".pdf">
+            </div>
+            
+            <div id="loading-spinner" class="spinner" style="display: none;"></div>
+            
+            <div id="pdf-viewer">
+                <!-- سيتم عرض صفحات الـ PDF هنا -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
